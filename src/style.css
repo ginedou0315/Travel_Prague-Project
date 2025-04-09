@@ -1,10 +1,14 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 body {
   font-family: "Poppins";
   background: #272044;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/Charles\ Bridge.jpg);
   background-position: center;
   background-size: cover;
@@ -47,4 +51,18 @@ header a {
   text-transform: uppercase;
   background: white;
   margin-top: 32px;
+}
+@media (max-width: 800px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
 }
